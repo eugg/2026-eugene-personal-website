@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王佑哲 Eugene Wang | 積極的迷惘人</title>
+    <meta name="description" content="王佑哲 Eugene Wang - 擁抱變革的開創者、細膩的管理者，也是個熱情的分享者。USPACE 共同創辦人及營運長。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 3D Grid Background -->
+    <div class="grid-background"></div>
+    
+    <div class="bento-container">
+        <!-- Row 1: Hero (2x2) + Socials (1x1) + Identity (1x1) -->
+        <div class="bento-card hero-card" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+            <div class="card-bg" style="background-image: url('assets/images/avatar.jpg');"></div>
+            <div class="card-content hero-content">
+                <h1 class="hero-title">王佑哲</h1>
+                <p class="hero-subtitle">Eugene Wang</p>
+            </div>
+        </div>
+
+        <a href="https://www.facebook.com/euwang" target="_blank" class="bento-card social-card" data-tilt>
+            <div class="card-content social-content">
+                <img src="assets/images/fb_avatar.jpg" alt="Avatar" class="social-avatar">
+                <i class="fab fa-facebook-f social-icon"></i>
+                <p>在 Facebook 上追蹤我的趨勢觀察</p>
+            </div>
+        </a>
+
+        <div class="bento-card identity-card" data-tilt>
+            <div class="card-content identity-content">
+                <h3>創業輔導業師</h3>
+                <p>台大 EiMBA 創業專題業師<br>台大創意創業學程<br>政大創新創業學程<br>Impact Hub Taipei</p>
+            </div>
+            <img src="assets/images/ntuspeech.jpg" alt="演講分享" class="identity-image">
+        </div>
+
+        <!-- Row 2 (continues Hero) + About (2x1) -->
+        <a href="https://euwang.substack.com" target="_blank" class="bento-card newsletter-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <div class="card-content newsletter-content">
+                <div class="newsletter-icon">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FF6719"><title>Substack</title><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+                </div>
+                <h3>《積極的迷惘人》電子報</h3>
+                <p>訂閱電子報，一起探索未知、挑戰自我。</p>
+                <div class="magnetic-btn-container">
+                    <div class="magnetic-btn">
+                        <span>立即訂閱</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="bento-card about-card" data-tilt>
+            <div class="card-content about-content">
+                <p>善於在變動中創造路徑的<b><u>連續創業者</u></b><br/><br/>
+                既能下場動手，也能搭建系統，樂於把經驗轉化為可複製的方法論，持續與他人分享。</p>
+            </div>
+        </div>
+
+
+        <!-- Row 3: About + TEDx Talk -->
+        <div class="bento-card talks-card" data-tilt>
+            <img src="assets/images/tedxtalk.png" alt="TEDx Talk" class="talks-image">
+            <div class="card-content talks-content">
+                <h2>TEDx 演講</h2>
+                <p>沒有方向？先從當個積極的迷惘人開始！</p>
+                <button class="talks-watch-btn" id="open-video-modal">觀看演講 <i class="fas fa-play"></i></button>
+            </div>
+        </div>
+
+        <!-- Row 4: 3 Equal Trait Cards (Full Width Row) -->
+        <div class="traits-row">
+            <div class="bento-card trait-card" data-tilt>
+                <div class="card-content trait-content">
+                    <div class="trait-text">
+                        <h3>掌握趨勢的技術變革者</h3>
+                        <p>擅長在趨勢中找到機會、創造價值。</p>
+                    </div>
+                    <i class="fas fa-lightbulb trait-icon"></i>
+                </div>
+            </div>
+            <div class="bento-card trait-card" data-tilt>
+                <div class="card-content trait-content">
+                    <div class="trait-text">
+                        <h3>適才適所的管理者</h3>
+                        <p>從零建立團隊，帶領團隊在挑戰中成長。</p>
+                    </div>
+                    <i class="fas fa-users trait-icon"></i>
+                </div>
+            </div>
+            <div class="bento-card trait-card" data-tilt>
+                <div class="card-content trait-content">
+                    <div class="trait-text">
+                        <h3>善於激勵的分享者</h3>
+                        <p>熱愛分享，登上 TEDx 舞台成為講者。</p>
+                    </div>
+                    <i class="fas fa-microphone-alt trait-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 5: Venture Cards (3 equal cards) -->
+        <div class="ventures-row">
+            <div class="bento-card venture-card" data-tilt>
+                <div class="card-content venture-content">
+                    <strong>USPACE 悠勢科技</strong>
+                    <span class="role">共同創辦人 / 營運長 / 技術長</span>
+                    <p>亞洲最大停車位共享平台，累積超過 160 萬用戶，提供超過 8.5 萬個私人停車位。</p>
+                </div>
+            </div>
+            <div class="bento-card venture-card" data-tilt>
+                <div class="card-content venture-content">
+                    <strong>貝殼放大 Backer-Founder</strong>
+                    <span class="role">共同創辦人 / 營運長 / 技術長</span>
+                    <p>台灣第一家群眾募資顧問公司，帶領公司從 8 人成長到 70 人。</p>
+                </div>
+            </div>
+            <div class="bento-card venture-card" data-tilt>
+                <div class="card-content venture-content">
+                    <strong>Inside 網路趨勢</strong>
+                    <span class="role">共同創辦人 / 作者</span>
+                    <p>台灣最著名的網路趨勢共筆部落格，2018 年由關鍵評論網收購。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-item">積極的迷惘人</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">USPACE</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">貝殼放大</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">Inside</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">TEDx Speaker</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">創業家</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">業師</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">積極的迷惘人</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">USPACE</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">貝殼放大</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">Inside</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">TEDx Speaker</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">創業家</span>
+            <span class="marquee-separator">•</span>
+            <span class="marquee-item">業師</span>
+            <span class="marquee-separator">•</span>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+            <div class="video-container">
+                <iframe id="youtube-iframe" src="" title="TEDx Talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
