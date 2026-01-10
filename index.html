@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王佑哲 Eugene Wang | 積極的迷惘人</title>
-    <meta name="description" content="王佑哲 Eugene Wang - 擁抱變革的開創者、細膩的管理者，也是個熱情的分享者。USPACE 共同創辦人及營運長。">
+    
+    <!-- SEO Meta Tags -->
+    <title>王佑哲 Eugene Wang | 積極的迷惘人 - 連續創業者・TEDx 講者</title>
+    <meta name="description" content="王佑哲 Eugene Wang，連續創業者、TEDx 講者、創業輔導業師。USPACE 悠勢科技共同創辦人，貝殼放大共同創辦人。擅長在變動中創造路徑，樂於把經驗轉化為可複製的方法論。">
+    <meta name="keywords" content="王佑哲, Eugene Wang, USPACE, 悠勢科技, 貝殼放大, TEDx, 創業, 連續創業者, 創業輔導, 業師, 停車位共享">
+    <meta name="author" content="王佑哲 Eugene Wang">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eugene.tw/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eugene.tw/">
+    <meta property="og:title" content="王佑哲 Eugene Wang | 積極的迷惘人">
+    <meta property="og:description" content="連續創業者、TEDx 講者、創業輔導業師。USPACE 悠勢科技共同創辦人，樂於把經驗轉化為可複製的方法論。">
+    <meta property="og:image" content="https://eugene.tw/assets/images/avatar.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="王佑哲 Eugene Wang">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://eugene.tw/">
+    <meta name="twitter:title" content="王佑哲 Eugene Wang | 積極的迷惘人">
+    <meta name="twitter:description" content="連續創業者、TEDx 講者、創業輔導業師。USPACE 悠勢科技共同創辦人。">
+    <meta name="twitter:image" content="https://eugene.tw/assets/images/avatar.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="theme-color" content="#F5F2EB">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +67,7 @@
             </div>
         </a>
 
-        <div class="bento-card identity-card" data-tilt>
+        <div class="bento-card identity-card" data-tilt id="open-mentor-modal" style="cursor: pointer;">
             <div class="card-content identity-content">
                 <h3>創業輔導業師</h3>
                 <p>台大 EiMBA 創業專題業師<br>台大創意創業學程<br>政大創新創業學程<br>Impact Hub Taipei</p>
@@ -57,7 +91,7 @@
             </div>
         </a>
 
-        <div class="bento-card about-card" data-tilt>
+        <div class="bento-card about-card" data-tilt id="open-about-modal" style="cursor: pointer;">
             <div class="card-content about-content">
                 <p>善於在變動中創造路徑的<b><u>連續創業者</u></b><br/><br/>
                 既能下場動手，也能搭建系統，樂於把經驗轉化為可複製的方法論，持續與他人分享。</p>
@@ -77,7 +111,7 @@
 
         <!-- Row 4: 3 Equal Trait Cards (Full Width Row) -->
         <div class="traits-row">
-            <div class="bento-card trait-card" data-tilt>
+            <div class="bento-card trait-card" data-tilt id="open-tech-modal" style="cursor: pointer;">
                 <div class="card-content trait-content">
                     <div class="trait-text">
                         <h3>掌握趨勢的技術變革者</h3>
@@ -86,7 +120,7 @@
                     <i class="fas fa-lightbulb trait-icon"></i>
                 </div>
             </div>
-            <div class="bento-card trait-card" data-tilt>
+            <div class="bento-card trait-card" data-tilt id="open-manager-modal" style="cursor: pointer;">
                 <div class="card-content trait-content">
                     <div class="trait-text">
                         <h3>適才適所的管理者</h3>
@@ -95,7 +129,7 @@
                     <i class="fas fa-users trait-icon"></i>
                 </div>
             </div>
-            <div class="bento-card trait-card" data-tilt>
+            <div class="bento-card trait-card" data-tilt id="open-sharer-modal" style="cursor: pointer;">
                 <div class="card-content trait-content">
                     <div class="trait-text">
                         <h3>善於激勵的分享者</h3>
@@ -108,21 +142,21 @@
 
         <!-- Row 5: Venture Cards (3 equal cards) -->
         <div class="ventures-row">
-            <div class="bento-card venture-card" data-tilt>
+            <div class="bento-card venture-card" data-tilt id="open-uspace-modal" style="cursor: pointer;">
                 <div class="card-content venture-content">
                     <strong>USPACE 悠勢科技</strong>
                     <span class="role">共同創辦人 / 營運長 / 技術長</span>
                     <p>亞洲最大停車位共享平台，累積超過 160 萬用戶，提供超過 8.5 萬個私人停車位。</p>
                 </div>
             </div>
-            <div class="bento-card venture-card" data-tilt>
+            <div class="bento-card venture-card" data-tilt id="open-bf-modal" style="cursor: pointer;">
                 <div class="card-content venture-content">
                     <strong>貝殼放大 Backer-Founder</strong>
                     <span class="role">共同創辦人 / 營運長 / 技術長</span>
                     <p>台灣第一家群眾募資顧問公司，帶領公司從 8 人成長到 70 人。</p>
                 </div>
             </div>
-            <div class="bento-card venture-card" data-tilt>
+            <div class="bento-card venture-card" data-tilt id="open-inside-modal" style="cursor: pointer;">
                 <div class="card-content venture-content">
                     <strong>Inside 網路趨勢</strong>
                     <span class="role">共同創辦人 / 作者</span>
@@ -174,6 +208,317 @@
             <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
             <div class="video-container">
                 <iframe id="youtube-iframe" src="" title="TEDx Talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mentor Modal -->
+    <div class="mentor-modal" id="mentor-modal">
+        <div class="modal-overlay" id="mentor-modal-overlay"></div>
+        <div class="modal-content mentor-modal-content">
+            <button class="modal-close" id="mentor-modal-close"><i class="fas fa-times"></i></button>
+            <div class="mentor-modal-body">
+                <h2>創業輔導業師</h2>
+                
+                <div class="mentor-intro">
+                    <p>我熱愛分享，也會定期整理自己想法脈絡，整理成方法論。我把過去幾十年創業經驗，整理成名為「積極的迷惘人」的演講題目，除了曾在台大、交大、政大、世新等大學與學子分享，更曾登上 TEDx Talk 成為分享者。</p>
+                    <p>同時，我也是台大創意創業學程、政大創新創業學程、Impact Hub 社會影響力製造所講師及業師，以自身經驗去帶領年輕的創業者，是我很重要的成就感來源。以下是我的分享經歷：</p>
+                </div>
+
+                <div class="mentor-section">
+                    <h3>擔任業師</h3>
+                    <ul>
+                        <li>2025 學年 台大 EiMBA 創業專題業師</li>
+                        <li>2022,2024 Impact Hub 社會影響力製造所 保誠創新智造所 輔導業師</li>
+                        <li>2022,2024 學年 台大創意創業學程 輔導業師</li>
+                        <li>2022,2023 學年 政大創新創業學程 輔導業師</li>
+                    </ul>
+                </div>
+
+                <div class="mentor-section">
+                    <h3>創業經驗分享</h3>
+                    <ul>
+                        <li>2023 年 12 月 資訊種子課程講師</li>
+                        <li>2023 年 10 月 台大創創學程</li>
+                        <li>2023 年 9 月 Impact Hub 分享</li>
+                        <li>2023 年 3 月 台大創創學程</li>
+                        <li>2022 年 2 月 台大創創學程</li>
+                        <li>2022 年 1 月 北科大青年城市論壇</li>
+                        <li>2021 年 12 月 三民高中</li>
+                        <li>2021 年 10 月 政治大學 EITC 業師分享</li>
+                        <li>2021 年 10 月 城市論壇「共享經濟與創業」</li>
+                        <li>2021 年 9 月 Tibame「IoT 應用與發展」</li>
+                        <li>2021 年 8 月 華朋扶輪社</li>
+                        <li>2020 年 12 月 清華大學「共享經濟與 IoT」</li>
+                        <li>2020 年 3 月 新竹實驗中學 職涯講座</li>
+                        <li>2019 年 12 月 資訊種子課程講師</li>
+                        <li>2018 年 10 月 TEDxNTUST</li>
+                        <li>2018 年 7 月 104 職涯講座</li>
+                        <li>2018 年 5 月 交通大學通識系列講座</li>
+                        <li>2017 年 11 月 世新大學畢聯會</li>
+                        <li>2017 年 11 月 資訊種子課程講師</li>
+                        <li>2017 年 5 月 政大國際競合與企業經營專題講座</li>
+                        <li>2017 年 3 月 台大財金系學會課程</li>
+                        <li>2017 年 2 月 行政院青創基地</li>
+                        <li>2017 年 1 月 微軟實習計畫職涯分享</li>
+                        <li>2017 年 3 月 Cheers 校園講座 - 高雄醫學大學</li>
+                        <li>2016 年 11 月 Cheers 校園講座 - 清華大學</li>
+                        <li>2016 年 4 月 微軟實習職涯分享 「積極的迷惘人」</li>
+                        <li>2015 年 6 月 資訊種子分享(三創)</li>
+                    </ul>
+                </div>
+
+                <div class="mentor-section">
+                    <h3>群眾集資分享</h3>
+                    <ul>
+                        <li>2018 年 11 月 政大創聯會</li>
+                        <li>2017 年 11 月 政大創聯會</li>
+                        <li>2017 年 7 月 新北市產經大學講師</li>
+                        <li>2017 年 5 月 沐新扶輪社</li>
+                        <li>2017 年 4 月 台中文創資源會</li>
+                        <li>2017 年 3 月 經濟部 STIR 創莘園</li>
+                        <li>2017 年 3 月 彰化水五金公會</li>
+                        <li>2016 年 12 月 台南精湛光學</li>
+                        <li>2016 年 11 月 新創事業獎</li>
+                        <li>2016 年 5 月 均優學習論壇</li>
+                        <li>2016 年 4 月 三五會</li>
+                        <li>2016 年 1 月 數位時代 創業小聚</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="about-modal" id="about-modal">
+        <div class="modal-overlay" id="about-modal-overlay"></div>
+        <div class="modal-content about-modal-content">
+            <button class="modal-close" id="about-modal-close"><i class="fas fa-times"></i></button>
+            <div class="about-modal-body">
+                <h2>關於</h2>
+                
+                <div class="about-intro">
+                    <p>我是王佑哲，一位擁抱變革的開創者、細膩的管理者，也是個熱情的分享者。目前於 USPACE 擔任共同創辦人及營運長</p>
+                    <p>從 Inside 部落格 的創立、到 貝殼放大 和 USPACE 顛覆傳統市場，我一直在技術與創新的前沿尋找與創造機會。作為一個 ESTP 型人格，我用自律、創意和溝通整合的力量，為團隊和客戶帶來價值。</p>
+                    <p>在管理上，我從零開始建立團隊，懂得根據每個人的特質設定目標，帶領團隊在挑戰中成長。我也熱衷於分享，從大學講堂到 TEDx 舞台，我都樂於將自己的經驗轉化為他人的啟發。</p>
+                    <p>簡單來說，我熱愛探索未知、挑戰自我、啟發他人，並在這個過程中不斷成長。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Innovator Modal -->
+    <div class="tech-modal" id="tech-modal">
+        <div class="modal-overlay" id="tech-modal-overlay"></div>
+        <div class="modal-content tech-modal-content">
+            <button class="modal-close" id="tech-modal-close"><i class="fas fa-times"></i></button>
+            <div class="tech-modal-body">
+                <h2>掌握趨勢的變革者</h2>
+                <p class="tech-subtitle">擅長在趨勢中找到機會、創造價值。</p>
+                
+                <div class="tech-timeline">
+                    <div class="tech-item">
+                        <div class="tech-year">2019</div>
+                        <div class="tech-desc">
+                            受邀加入共享車位平台 <strong>USPACE</strong> 成為共同創辦人，擔任技術長與營運長，著手進行程式重構以及團隊招聘，並與團隊研發出新型 IoT 專利，在傳統停車市場上打出知名度，創造出新的活水動能與商機。
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-year">2014</div>
+                        <div class="tech-desc">
+                            因為了解台灣群眾集資生態，與幾位夥伴成立了第一間集資顧問公司-<strong>貝殼放大</strong>，從集資平台轉型到集資顧問，在成立第一年即獲得種子輪投資，因為團隊擴大，身份從技術長轉型成為營運長，後續並投入天使放大的投資基金規劃。
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-year">2013</div>
+                        <div class="tech-desc">
+                            受到無名小站創辦人林弘全的邀請，加入 <strong>flyingV</strong>，成為六人草創時期團隊中的一員。在 kickstarter 引領起的群眾集資潮中， flyingV 從 1500 名之外的網站，在一年之中，掌握了路跑風潮與社會運動集資，躍升成為台灣最大的集資網站。
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-year">2010</div>
+                        <div class="tech-desc">
+                            在台灣中文網路科技媒體仍在萌芽時，與幾個夥伴一同創立了 <strong>Inside 網路趨勢部落格</strong>，網站從無到有，第一年即累積超過 800 篇文章，Alexa 流量達台灣第 160 名，並得到天使投資，2018 年由 TNL(關鍵評論網收購)。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manager Modal -->
+    <div class="manager-modal" id="manager-modal">
+        <div class="modal-overlay" id="manager-modal-overlay"></div>
+        <div class="modal-content manager-modal-content">
+            <button class="modal-close" id="manager-modal-close"><i class="fas fa-times"></i></button>
+            <div class="manager-modal-body">
+                <h2>適才適所的管理者</h2>
+                <div class="manager-intro">
+                    <p>曾多次從無到有建立團隊，針對不同人格特質的夥伴給於不同目標，帶領團隊在有限資源內完成使命。</p>
+                </div>
+                
+                <div class="manager-stats">
+                    <div class="manager-stat-item">
+                        <div class="stat-icon"><i class="fas fa-users-cog"></i></div>
+                        <div class="stat-info">
+                            <h4>貝殼放大</h4>
+                            <p>草創時期在二年內，員工人數從 <strong>8</strong> 人成長到 <strong>72</strong> 人，建立 <strong>6</strong> 個部門。</p>
+                        </div>
+                    </div>
+                    <div class="manager-stat-item">
+                        <div class="stat-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="stat-info">
+                            <h4>人才招聘</h4>
+                            <p>親自面試超過 <strong>200</strong> 名員工、招聘並管理實習生，定期與同仁一對一協談並記錄追蹤。</p>
+                        </div>
+                    </div>
+                    <div class="manager-stat-item">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-info">
+                            <h4>USPACE</h4>
+                            <p>技術部門從 <strong>1</strong> 人團隊、成長到 <strong>12</strong> 人，四年之間離職率為 <strong>0</strong>，而且工作績效優秀。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sharer Modal -->
+    <div class="sharer-modal" id="sharer-modal">
+        <div class="modal-overlay" id="sharer-modal-overlay"></div>
+        <div class="modal-content sharer-modal-content">
+            <button class="modal-close" id="sharer-modal-close"><i class="fas fa-times"></i></button>
+            <div class="sharer-modal-body">
+                <h2>善於激勵的分享者</h2>
+                <div class="sharer-intro">
+                    <p>喜歡分享，也會定期整理自己想法脈絡，整理成方法論。</p>
+                </div>
+                
+                <div class="sharer-highlight">
+                    <div class="highlight-content">
+                        <h3>TEDx Talk 分享者</h3>
+                        <p>我把過去幾十年創業經驗，整理成名為「積極的迷惘人」的演講題目，登上 TEDx 舞台分享。</p>
+                        <div class="stat-badge">
+                            <i class="fas fa-eye"></i> 超過 32 萬觀看次數
+                        </div>
+                    </div>
+                    <div class="highlight-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                </div>
+
+                <div class="sharer-roles">
+                    <h3>講師及業師身份</h3>
+                    <ul>
+                        <li><i class="fas fa-university"></i> 台大創意創業學程 講師及業師</li>
+                        <li><i class="fas fa-university"></i> 政大創新創業學程 講師及業師</li>
+                        <li><i class="fas fa-hands-helping"></i> Impact Hub 社會影響力製造所 講師及業師</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> 台大、交大、政大、世新等大學講座分享</li>
+                    </ul>
+                    <p class="role-note">以自身經驗去帶領年輕的創業者，是我很重要的成就感來源。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- USPACE Modal -->
+    <div class="venture-modal uspace-modal" id="uspace-modal">
+        <div class="modal-overlay" id="uspace-modal-overlay"></div>
+        <div class="modal-content venture-modal-content">
+            <button class="modal-close" id="uspace-modal-close"><i class="fas fa-times"></i></button>
+            <div class="venture-modal-body">
+                <h2>USPACE 悠勢科技</h2>
+                <div class="venture-role">共同創辦人兼營運長/技術長 <span class="venture-period">(2019/2 ~ 至今)</span></div>
+                
+                <div class="venture-intro">
+                    <p>USPACE 是亞洲最大的停車位共享平台，我擔任技術長一職，從一人團隊發展至的 15 人團隊。除了程式架構撰寫，同時也負責招募、建立團隊以及工作分配。從 2019 年接手外包團隊的工作後，用了僅三個月的時間，重構了所有前台 APP 及後台程式，包括 USPACE 以及 ULOCK 。另外，我和團隊成員共同發明了一套物聯網（IoT）控制裝置專利，讓停車場的智能化可以用更低成本的方式實現。</p>
+                    <p>2023年後轉接 USPACE 集團營運長</p>
+                </div>
+                
+                <div class="venture-stats uspace-stats">
+                    <div class="v-stat-item">
+                        <div class="v-stat-number">160萬+</div>
+                        <div class="v-stat-label">累積用戶</div>
+                        <div class="v-stat-desc">遍及台灣和日本</div>
+                    </div>
+                    <div class="v-stat-item">
+                        <div class="v-stat-number">92,000+</div>
+                        <div class="v-stat-label">私人停車位</div>
+                        <div class="v-stat-desc">台灣最大共享平台</div>
+                    </div>
+                    <div class="v-stat-item">
+                        <div class="v-stat-number">1000萬+</div>
+                        <div class="v-stat-label">成功下訂</div>
+                        <div class="v-stat-desc">便捷停車服務</div>
+                    </div>
+                    <div class="v-stat-item">
+                        <div class="v-stat-number">4.9</div>
+                        <div class="v-stat-label">App Store 評分</div>
+                        <div class="v-stat-desc">下載次數超過百萬</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backer-Founder Modal -->
+    <div class="venture-modal bf-modal" id="bf-modal">
+        <div class="modal-overlay" id="bf-modal-overlay"></div>
+        <div class="modal-content venture-modal-content">
+            <button class="modal-close" id="bf-modal-close"><i class="fas fa-times"></i></button>
+            <div class="venture-modal-body">
+                <h2>貝殼放大 Backer-Founder</h2>
+                <div class="venture-role">共同創辦人兼營運長 <span class="venture-period">(2014/10 - 2017/3)</span></div>
+                
+                <div class="venture-intro">
+                    <p>Backer-Founder 是台灣第一家群眾募資顧問公司，提供從產品創意到市場推廣等垂直整合服務。我從技術長的職位轉變到營運長，帶領公司從 8 人的小團隊成長到 70 人的大團隊，並制定許多公司規章制度和工作流程。</p>
+                </div>
+
+                <div class="venture-timeline">
+                    <div class="v-timeline-item">
+                        <div class="v-year">2014 - 2015</div>
+                        <div class="v-desc">以技術長身分，為客戶建立了集資、形象網站，在創業第一年內，為客戶建立了超過 25 個網站。</div>
+                    </div>
+                    <div class="v-timeline-item">
+                        <div class="v-year">2015 - 2017</div>
+                        <div class="v-desc">轉任營運長、天使放大投資基金負責人，公司員工從 8 人增加至 70 人，負責制定公司規章制度，並與會計事務所溝通製作財報，對投資者進行匯報。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inside Modal -->
+    <div class="venture-modal inside-modal" id="inside-modal">
+        <div class="modal-overlay" id="inside-modal-overlay"></div>
+        <div class="modal-content venture-modal-content">
+            <button class="modal-close" id="inside-modal-close"><i class="fas fa-times"></i></button>
+            <div class="venture-modal-body">
+                <h2>Inside 網路趨勢部落格</h2>
+                <div class="venture-role">共同創辦人兼作者 <span class="venture-period">(2010/2 - 2018/4)</span></div>
+                
+                <div class="venture-intro">
+                    <p>2012 年我與其他 5 位共同創辦人共同創辦了 Inside，目前仍是台灣最著名的網路趨勢共筆部落格。我們在草創 18 個月內撰寫了 800 多篇文章，成為當時流量最高的繁體中文科技媒體，並曾嘗試做一些運用資源做創新題目，如科技人才求職網站、新創討論區和程式問答平台，我在其中擔任文章寫手、專案經理和共同創辦人。</p>
+                </div>
+
+                <div class="venture-achievements">
+                    <div class="v-achievement-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Alexa 網站排名 - 最高台灣第 <strong>160</strong> 名</span>
+                    </div>
+                    <div class="v-achievement-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>在 2012 年獲得天使投資</span>
+                    </div>
+                    <div class="v-achievement-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>在 2018 年 4 月被 The News Lens（TNL）收購</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
