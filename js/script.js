@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add initial hidden state
         shuffledCards.forEach(card => {
             card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            card.style.transform = 'translateY(60px)'; // Increased from 20px
+            card.style.transition = 'opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)'; // Super fast (0.3s)
         });
         
         // Fade in cards with random order and staggered delay
@@ -20,8 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 card.style.opacity = '1';
                 card.style.transform = 'translateY(0)';
-            }, 100 + (index * 120)); // Staggered delay: 100ms base + 120ms per card
+            }, 30 + (index * 30)); // Rapid fire stagger: 30ms base + 30ms per card
         });
+
+        // Clean up inline transition after animation to allow CSS hover effects to take over
+        const totalAnimationTime = 30 + (shuffledCards.length * 30) + 300;
+        setTimeout(() => {
+            shuffledCards.forEach(card => {
+                card.style.transition = '';
+            });
+        }, totalAnimationTime);
     };
     
     // Execute fade-in animation
